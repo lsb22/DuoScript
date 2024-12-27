@@ -8,7 +8,14 @@ body {
     #183a97,
     #133080
   );
+  overflow-x: hidden;
 }
+
+/* section-styles */
+.section {
+  height: 100vh;
+}
+
 /* nav-styles */
 
 .nav-logo {
@@ -67,4 +74,35 @@ body {
 .home-button-text {
   font-family: "Italianno", serif;
   font-size: 1.8rem;
+}
+
+/* services */
+
+.services-card {
+  background-color: #efdb61;
+  border-radius: 12px;
+}
+
+.services-heading {
+  font-size: 5rem;
+  font-family: "Italianno", serif;
+}
+
+.services-card-holder {
+  margin-top: 70px;
+}
+
+.services-card-header {
+  color: #564040;
+  font-size: 1.5rem;
+  padding-bottom: 50px;
+}
+
+.services-card-description {
+  color: black;
+  background-color: #f2eab2;
+  font-size: 1rem;
+  border-radius: 12px;
+  padding: 60px 30px;
+  text-align: left;
 }
