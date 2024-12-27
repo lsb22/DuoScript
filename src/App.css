@@ -1,0 +1,70 @@
+body {
+  background-image: linear-gradient(
+    -90deg,
+    #2e53b9,
+    #4465bf,
+    #406be1,
+    #214abd,
+    #183a97,
+    #133080
+  );
+}
+/* nav-styles */
+
+.nav-logo {
+  font-family: "Italianno", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+/* cards-styles */
+.card {
+  background-color: #edca7f;
+  color: rgb(41, 37, 37);
+  border-radius: 12px;
+}
+
+.card-header {
+  background-color: #f3dec5;
+  width: 270px;
+  height: 70px;
+  margin: 40px 0 35px 30px;
+  border-radius: 12px;
+}
+
+.card-body {
+  background-color: #f3dec5;
+  width: 340px;
+  height: 240px;
+  border-radius: 12px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+/* displayname styles */
+.title {
+  font-family: "Italianno", serif;
+  font-weight: 500;
+  font-size: 11rem;
+  /* padding-left: 20px; */
+  padding-top: 13px;
+}
+
+.title-script-part {
+  color: gold;
+}
+
+.display-text {
+  margin-top: -20px;
+  width: 400px;
+  font-size: 1rem;
+}
+
+.display-text-part {
+  color: gold;
+}
+
+.home-button-text {
+  font-family: "Italianno", serif;
+  font-size: 1.8rem;
+}
