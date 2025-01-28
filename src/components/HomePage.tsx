@@ -1,7 +1,8 @@
-import { Grid, GridItem, Box } from "@chakra-ui/react";
-import NavBar from "./NavBar";
+import { Box, Flex, Grid, GridItem } from "@chakra-ui/react";
+import AboutSection from "./AboutSection";
 import DisplayCards from "./DisplayCards";
 import DisplayName from "./DisplayName";
+import NavBar from "./NavBar";
 import Services from "./Services";
 const HomePage = () => {
   return (
@@ -15,8 +16,10 @@ const HomePage = () => {
           <GridItem area={"nav"}>
             <NavBar />
           </GridItem>
-          <GridItem area={"cards"} padding={20}>
-            <DisplayCards />
+          <GridItem area={"cards"} pt={20}>
+            <Flex justifyContent="center">
+              <DisplayCards />
+            </Flex>
           </GridItem>
           <GridItem area={"Name"}>
             <DisplayName />
@@ -25,6 +28,9 @@ const HomePage = () => {
       </Box>
       <Box className="section section-2">
         <Services />
+      </Box>
+      <Box className="section section-3">
+        <AboutSection />
       </Box>
     </>
   );
