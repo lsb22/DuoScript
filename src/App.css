@@ -1,3 +1,10 @@
+:root {
+  --border: rgb(3, 169, 244);
+  --g1: rgb(98, 0, 234);
+  --g2: rgb(236, 64, 122);
+  --g3: rgb(253, 216, 53);
+}
+
 body {
   background-image: linear-gradient(
     -90deg,
@@ -87,7 +94,6 @@ body {
   position: relative;
   z-index: 10;
   opacity: 1;
-  /* background: #eee; */
   transform: rotate(-1deg) translateX(0%) scale(1);
 }
 
@@ -101,7 +107,6 @@ body {
   font-family: "Italianno", serif;
   font-weight: 500;
   font-size: 11rem;
-  /* padding-left: 20px; */
   padding-top: 13px;
 }
 
@@ -127,31 +132,125 @@ body {
 /* services */
 
 .services-card {
-  background-color: #efdb61;
-  border-radius: 12px;
+  position: relative;
 }
 
-.services-heading,
-.about-heading {
-  font-size: 5rem;
+.services-card-img {
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.services-card:hover:before {
+  background-position: 100% 100%;
+  transform: scale(1, 1);
+}
+
+.services-card::before {
+  background: linear-gradient(
+    130deg,
+    transparent 0% 33%,
+    var(--g1) 66%,
+    var(--g2) 83.5%,
+    var(--g3) 100%
+  );
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  transition: background-position 750ms ease, transform 350ms ease;
+  width: 100%;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.services-text {
   font-family: "Italianno", serif;
+  color: gold;
+  font-size: 5rem;
+  margin-bottom: 20px;
 }
 
-.services-card-holder {
-  margin-top: 70px;
+.services-card-container {
+  columns: 290px;
+  padding: 10px;
 }
 
-.services-card-header {
-  color: #564040;
+.service-card-desc {
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  width: max-content;
+  z-index: 100;
+  left: 50%;
+  bottom: 40%;
+  color: rgb(0, 0, 0);
+  transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -20%);
+  padding: 10px;
+  background: rgba(46, 39, 39, 0.3);
+  border-radius: 8px;
+  border: 2px solid rgba(177, 177, 177, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: 750ms;
+  color: white;
+  font-size: 1.4rem;
+  font-style: bold;
+}
+
+.services-card:hover .service-card-desc {
+  opacity: 1;
+  transform: translate(-50%, -30%);
+}
+
+body::before {
+  background: linear-gradient(
+    130deg,
+    transparent 0% 33%,
+    var(--g1) 66%,
+    var(--g2) 83.5%,
+    var(--g3) 100%
+  );
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  transition: background-position 750ms ease, transform 350ms ease;
+  width: 100%;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+body.active::before {
+  background-position: 100% 100%;
+  transform: scale(1, 1);
+}
+
+.services-dialog {
+  background-color: rgb(149, 200, 54);
+}
+
+.service-dialog-title {
   font-size: 1.5rem;
-  padding-bottom: 50px;
 }
 
-.services-card-description {
-  color: black;
-  background-color: #f2eab2;
+.service-dialog-desc {
   font-size: 1rem;
-  border-radius: 12px;
-  padding: 60px 30px;
-  text-align: left;
+}
+/* about styles */
+
+.about-heading {
+  font-family: "Italianno", serif;
+  color: gold;
+  font-size: 5rem;
 }
