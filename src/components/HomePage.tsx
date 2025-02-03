@@ -4,6 +4,7 @@ import DisplayCards from "./DisplayCards";
 import DisplayName from "./DisplayName";
 import NavBar from "./NavBar";
 import Services from "./Services";
+import ContactUs from "./ContactUs";
 const HomePage = () => {
   return (
     <>
@@ -31,6 +32,9 @@ const HomePage = () => {
       </Box>
       <Box className="section section-3">
         <AboutSection />
+      </Box>
+      <Box className="section section-4">
+        <ContactUs />
       </Box>
     </>
   );
