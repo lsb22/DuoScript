@@ -2,7 +2,7 @@ import { Box, Button, Text, VStack } from "@chakra-ui/react";
 const DisplayName = () => {
   return (
     <Box className="display-name-container">
-      <VStack>
+      <VStack className="display-name-stack">
         <Text className="title">
           Duo<span className="title-script-part">Script</span>
         </Text>
@@ -13,7 +13,7 @@ const DisplayName = () => {
             <span className="title-sub">convert</span>
           </Text>
         </Box>
-        <Button mt={10} colorPalette="yellow">
+        <Button className="display-butt" colorPalette="yellow">
           <Text className="home-button-text">Contact</Text>
         </Button>
       </VStack>

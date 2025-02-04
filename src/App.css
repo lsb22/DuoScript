@@ -171,6 +171,13 @@ body {
   transform: rotate(-1deg) translateX(0%) scale(1);
 }
 
+@media (max-width: 1023.88px) {
+  .cards {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
 /* display-name styles */
 
 .display-name-container {
@@ -226,9 +233,46 @@ body {
   color: gold;
 }
 
+.display-butt {
+  margin-top: 50px;
+}
+
 .home-button-text {
   font-family: "Italianno", serif;
   font-size: 1.8rem;
+}
+
+@media (max-width: 1023.88px) and (min-width: 774px) {
+  .title {
+    font-size: 14rem;
+  }
+
+  .display-name-stack {
+    padding-left: 40px;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 773.88px) and (min-width: 641px) {
+  .title {
+    font-size: 11rem;
+  }
+
+  .display-name-stack {
+    padding-left: 44px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 640.88px) {
+  .title {
+    font-size: 8.3rem;
+  }
+
+  .display-name-stack {
+    padding-left: 50px;
+    padding-top: 30px;
+  }
 }
 
 /* services */
