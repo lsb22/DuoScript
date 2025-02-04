@@ -171,10 +171,27 @@ body {
   transform: rotate(-1deg) translateX(0%) scale(1);
 }
 
-@media (max-width: 1023.88px) {
+@media (max-width: 1023.88px) and (min-width: 774px) {
   .cards {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 773.88px) and (min-width: 641px) {
+  .cards {
+    height: 320px;
+    width: 320px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cards {
+    height: 300px;
+    width: 300px;
+    margin-top: -80px;
+    margin-bottom: 100px;
   }
 }
 
