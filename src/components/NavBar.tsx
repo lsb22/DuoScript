@@ -1,14 +1,13 @@
-import { HStack, Text, Box, Button, Image } from "@chakra-ui/react";
+import { HStack, Box, Button, Image } from "@chakra-ui/react";
 import logo from "../assets/images/duo_script_logo.png";
 
 const NavBar = () => {
   return (
     <HStack justifyContent="space-between">
       <Box pl={8}>
-        {/* <Text className="nav-logo">Logo</Text> */}
-        <Image src={logo} boxSize={20} className="logo" />
+        <Image src={logo} className="logo" />
       </Box>
-      <HStack>
+      <HStack className="nav-butt-container">
         <Button
           mr={8}
           variant="ghost"
@@ -23,7 +22,7 @@ const NavBar = () => {
           className="nav-butt"
           onClick={() => window.scrollTo(0, 1320)}
         >
-          Contact
+          About
         </Button>
         <Button
           mr={8}
@@ -31,8 +30,9 @@ const NavBar = () => {
           className="nav-butt"
           onClick={() => window.scrollTo(0, 2000)}
         >
-          About
+          Contact
         </Button>
+        <Box className="nav-toggle">Open</Box>
       </HStack>
     </HStack>
   );
