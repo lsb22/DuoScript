@@ -293,6 +293,7 @@ body.active::before {
   height: 40px;
   background-color: transparent;
   border: 2px solid gold;
+  box-shadow: 0 0 10px gold;
 }
 
 .back-div:nth-child(1) {
