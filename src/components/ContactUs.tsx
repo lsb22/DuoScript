@@ -13,6 +13,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
+import { Tooltip } from "../components/ui/tooltip";
+
 const ContactUs = () => {
   const floatingStyles = defineStyle({
     pos: "absolute",
@@ -59,6 +61,13 @@ const ContactUs = () => {
     }
   };
 
+  const handleClick = () => {
+    navigator.clipboard
+      .writeText("abc@gmail.com")
+      .then(() => alert("Email successfully copied"))
+      .catch(() => alert("Failed to copy email."));
+  };
+
   return (
     <Box className="contact-section">
       <Box textAlign="center">
@@ -72,9 +81,16 @@ const ContactUs = () => {
               <Text className="contact-hd2">
                 Fill in the form or drop an email
               </Text>
-              <Button className="contact-hd3-bt" bgColor="gold" color="blue">
-                <Text>abc@gmail.com</Text>
-              </Button>
+              <Tooltip showArrow content="Click to copy email">
+                <Button
+                  className="contact-hd3-bt"
+                  bgColor="gold"
+                  color="blue"
+                  onClick={handleClick}
+                >
+                  <Text>abc@gmail.com</Text>
+                </Button>
+              </Tooltip>
             </Box>
           </VStack>
         </GridItem>
