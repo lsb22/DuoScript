@@ -24,7 +24,7 @@ body {
 
 /* section-styles */
 .section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* nav-styles */
@@ -114,7 +114,7 @@ body {
   transform: rotate(-1deg) translateX(0%) scale(1);
 }
 
-/* displayname styles */
+/* display-name styles */
 
 .display-name-container {
   padding-right: 50px;
@@ -129,6 +129,34 @@ body {
 
 .title-script-part {
   color: gold;
+}
+
+.title-sub {
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+  background: linear-gradient(
+    to right,
+    #ffd700,
+    #ffea00,
+    #ffffff,
+    #ffc107,
+    #ffd700
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-text 3s linear infinite;
+  background-size: 200%;
+}
+
+@keyframes animate-text {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
 }
 
 .display-text {

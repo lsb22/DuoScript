@@ -8,9 +8,12 @@ import ContactUs from "./ContactUs";
 const HomePage = () => {
   return (
     <>
-      <Box className=" section section-1">
+      <Box className=" section section-1" border="1px solid">
         <Grid
-          templateAreas={{ lg: `"nav nav" "cards Name"`, base: `"nav cards"` }}
+          templateAreas={{
+            lg: `"nav nav" "cards Name"`,
+            base: `"nav" "Name" "cards"`,
+          }}
           templateRows={{ lg: "12vh 88vh", base: "10vh 90vh" }}
           templateColumns={{ lg: "50vw 50vw" }}
         >
