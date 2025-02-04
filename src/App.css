@@ -519,3 +519,18 @@ body.active::before {
   background-color: gold;
   box-shadow: 0 0 10px gold;
 }
+
+/* scroll-bar-stryles */
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e53b9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(205, 185, 69);
+  border-radius: 100vw;
+}
