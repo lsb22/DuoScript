@@ -1,4 +1,4 @@
-import { HStack, Text, Box } from "@chakra-ui/react";
+import { HStack, Text, Box, Button } from "@chakra-ui/react";
 
 const NavBar = () => {
   return (
@@ -6,10 +6,31 @@ const NavBar = () => {
       <Box pl={8}>
         <Text className="nav-logo">Logo</Text>
       </Box>
-      <HStack color="gold">
-        <Text mr={8}>Service</Text>
-        <Text mr={8}>Contact</Text>
-        <Text mr={8}>About</Text>
+      <HStack>
+        <Button
+          mr={8}
+          variant="ghost"
+          className="nav-butt"
+          onClick={() => window.scrollTo(0, 660)}
+        >
+          Service
+        </Button>
+        <Button
+          mr={8}
+          variant="ghost"
+          className="nav-butt"
+          onClick={() => window.scrollTo(0, 1320)}
+        >
+          Contact
+        </Button>
+        <Button
+          mr={8}
+          variant="ghost"
+          className="nav-butt"
+          onClick={() => window.scrollTo(0, 2000)}
+        >
+          About
+        </Button>
       </HStack>
     </HStack>
   );

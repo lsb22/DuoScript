@@ -5,6 +5,10 @@
   --g3: rgb(253, 216, 53);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: linear-gradient(
     -90deg,
@@ -29,6 +33,19 @@ body {
   font-family: "Italianno", serif;
   font-weight: 400;
   font-size: 2.5rem;
+}
+
+.nav-butt {
+  color: gold;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-butt:hover {
+  background-color: gold;
+  color: rgb(23, 22, 22);
 }
 
 /* cards-styles */
