@@ -1,10 +1,12 @@
-import { HStack, Text, Box, Button } from "@chakra-ui/react";
+import { HStack, Text, Box, Button, Image } from "@chakra-ui/react";
+import logo from "../assets/images/duo_script_logo.png";
 
 const NavBar = () => {
   return (
     <HStack justifyContent="space-between">
       <Box pl={8}>
-        <Text className="nav-logo">Logo</Text>
+        {/* <Text className="nav-logo">Logo</Text> */}
+        <Image src={logo} boxSize={20} className="logo" />
       </Box>
       <HStack>
         <Button

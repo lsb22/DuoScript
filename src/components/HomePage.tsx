@@ -8,7 +8,7 @@ import ContactUs from "./ContactUs";
 const HomePage = () => {
   return (
     <>
-      <Box className=" section section-1" border="1px solid">
+      <Box className=" section section-1">
         <Grid
           templateAreas={{
             lg: `"nav nav" "cards Name"`,
