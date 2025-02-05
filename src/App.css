@@ -439,8 +439,27 @@ body.active::before {
 
 .dialog-container {
   position: absolute;
-  bottom: 40%;
+  bottom: 35%;
   left: 50%;
+}
+
+@media (max-width: 1023.88px) {
+  .services-card-container {
+    grid-template-areas: "ph1 ph2" "ph3 ph2" "ph4 ph5";
+  }
+}
+
+@media (max-width: 640.88px) {
+  .dialog-container {
+    bottom: 28%;
+    left: 50%;
+  }
+}
+
+@media (max-width: 550.88px) {
+  .service-card-desc {
+    font-size: 1rem;
+  }
 }
 
 /* about styles */
