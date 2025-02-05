@@ -1,8 +1,8 @@
 import { Box, Image, Button, Text } from "@chakra-ui/react";
-import email from "../assets/images/Formal_Email.png";
+import email from "../assets/images/email_2.jpg";
 import script from "../assets/images/apprameya_proj_4.jpg";
 import ads from "../assets/images/apprameya_proj_5.jpg";
-import caption from "../assets/images/apprameya_proj_6.jpg";
+import caption from "../assets/images/caption_writing_2.jpg";
 import description from "../assets/images/apprameya_proj_7.png";
 import {
   DialogActionTrigger,
@@ -49,11 +49,6 @@ const Services = () => {
       title: "Ads writing",
       desc: "We deliver persuasive ad content for promotional campaigns, posters, and marketing materials designed to capture attention and drive action.",
     },
-    {
-      img: caption,
-      title: "Caption writing",
-      desc: "Our team writes creative and brand-aligned captions for Instagram ads, helping you stand out in the crowd.",
-    },
   ];
 
   const handleOpenClick = () => {
@@ -72,45 +67,50 @@ const Services = () => {
       <Box className="services-card-container" textAlign="center">
         {cards.map((card, index) => (
           <Box className="services-card">
-            <DialogRoot
-              placement="center"
-              motionPreset="slide-in-bottom"
-              closeOnInteractOutside={false}
-            >
-              <DialogTrigger>
-                <Button className="service-card-desc" onClick={handleOpenClick}>
-                  {card.title}
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="services-dialog">
-                <DialogHeader>
-                  <DialogTitle>
-                    <Text fontWeight="700" className="service-dialog-title">
-                      {card.title}
-                    </Text>
-                  </DialogTitle>
-                </DialogHeader>
-                <DialogBody>
-                  <Text
-                    className="service-dialog-desc"
-                    wordSpacing={2}
-                    letterSpacing={1}
+            <Box className="dialog-container">
+              <DialogRoot
+                placement="center"
+                motionPreset="slide-in-bottom"
+                closeOnInteractOutside={false}
+              >
+                <DialogTrigger>
+                  <Button
+                    className="service-card-desc"
+                    onClick={handleOpenClick}
                   >
-                    {card.desc}
-                  </Text>
-                </DialogBody>
-                <DialogFooter>
-                  <DialogActionTrigger>
-                    <Button onClick={handleCloseClick}>Close</Button>
-                  </DialogActionTrigger>
-                </DialogFooter>
-                <DialogCloseTrigger onClick={handleCloseClick} />
-              </DialogContent>
-            </DialogRoot>
+                    {card.title}
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="services-dialog">
+                  <DialogHeader>
+                    <DialogTitle>
+                      <Text fontWeight="700" className="service-dialog-title">
+                        {card.title}
+                      </Text>
+                    </DialogTitle>
+                  </DialogHeader>
+                  <DialogBody>
+                    <Text
+                      className="service-dialog-desc"
+                      wordSpacing={2}
+                      letterSpacing={1}
+                    >
+                      {card.desc}
+                    </Text>
+                  </DialogBody>
+                  <DialogFooter>
+                    <DialogActionTrigger>
+                      <Button onClick={handleCloseClick}>Close</Button>
+                    </DialogActionTrigger>
+                  </DialogFooter>
+                  <DialogCloseTrigger onClick={handleCloseClick} />
+                </DialogContent>
+              </DialogRoot>
+            </Box>
             <Image
               className="services-card-img"
               src={card.img}
-              objectFit="cover"
+              // objectFit="cover"
               key={index}
             />
           </Box>

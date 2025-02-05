@@ -300,9 +300,12 @@ body {
 
 .services-card-img {
   width: 100%;
+  height: 100%;
   margin-bottom: 1em;
   border-radius: 10px;
   cursor: pointer;
+  object-fit: cover;
+  aspect-ratio: 4.4/2.2;
 }
 
 .services-card:hover:before {
@@ -321,7 +324,7 @@ body {
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
-  height: 95%;
+  height: 100%;
   left: 0px;
   pointer-events: none;
   position: absolute;
@@ -340,8 +343,31 @@ body {
 }
 
 .services-card-container {
-  columns: 290px;
   padding: 10px;
+  display: grid;
+  grid-template-areas: "ph1 ph2 ph3" "ph4 ph2 ph5";
+  grid-auto-columns: 1fr;
+  gap: 1rem;
+}
+
+.services-card:nth-child(1) {
+  grid-area: ph2;
+}
+
+.services-card:nth-child(2) {
+  grid-area: ph1;
+}
+
+.services-card:nth-child(3) {
+  grid-area: ph3;
+}
+
+.services-card:nth-child(4) {
+  grid-area: ph4;
+}
+
+.services-card:nth-child(5) {
+  grid-area: ph5;
 }
 
 .service-card-desc {
@@ -409,6 +435,12 @@ body.active::before {
 
 .service-dialog-desc {
   font-size: 1rem;
+}
+
+.dialog-container {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
 }
 
 /* about styles */
