@@ -1,45 +1,51 @@
-import { Box, Text, VStack } from "@chakra-ui/react";
+import { Box, Card, Image, Text } from "@chakra-ui/react";
+import quality from "../assets/images/quality_img.jpg";
+import planning from "../assets/images/planning.jpg";
+import time from "../assets/images/timely_img.avif";
+
+interface CardsStucture {
+  title: string;
+  desc: string;
+  img: string;
+}
 
 const AboutSection = () => {
+  const cardsData: CardsStucture[] = [
+    {
+      title: "Quality And Originality",
+      desc: "We prioritize quality and originality in every word we write.",
+      img: quality,
+    },
+    {
+      title: "Systematic Approach",
+      desc: "With experience across industries and platforms, we tailor our approach to meet your specific needs.",
+      img: planning,
+    },
+    {
+      title: "Timely Delivery",
+      desc: "Timely delivery is our commitment, ensuring your projects stay on track.",
+      img: time,
+    },
+  ];
+
   return (
     <Box className="section-about">
-      <Box className="animate-background">
-        <div className="back-div"></div>
-        <div className="back-div"></div>
-        <div className="back-div"></div>
-        <div className="back-div"></div>
-        <div className="back-div"></div>
-        <div className="back-div"></div>
-        <div className="back-div"></div>
-        <div className="back-div"></div>
-        <div className="back-div"></div>
-        <div className="back-div"></div>
+      <Box className="about-heading" textAlign="center">
+        <Text>WhyUs?</Text>
       </Box>
-      <VStack>
-        <Box className="about-heading">
-          <Text>Why Us?</Text>
-        </Box>
-        <Box className="about-description" textAlign="center">
-          <Box className="about-item">
-            <Text>
-              We prioritize <span>quality</span> and <span>originality</span> in
-              every word we write.
-            </Text>
-          </Box>
-          <Box className="about-item">
-            <Text>
-              With experience across industries and platforms,{" "}
-              <span>we tailor our approach</span> to meet your specific needs.
-            </Text>
-          </Box>
-          <Box className="about-item">
-            <Text>
-              <span>Timely delivery</span> is our commitment, ensuring your
-              projects stay on track.
-            </Text>
-          </Box>
-        </Box>
-      </VStack>
+      <Box className="abt-card-container">
+        {cardsData.map((card, index) => (
+          <Card.Root key={index} className="abt-card">
+            <Image src={card.img} className="abt-card-img" />
+            <Card.Body>
+              <Card.Title className="abt-card-title">{card.title}</Card.Title>
+              <Card.Description color="blackAlpha.800">
+                {card.desc}
+              </Card.Description>
+            </Card.Body>
+          </Card.Root>
+        ))}
+      </Box>
     </Box>
   );
 };
