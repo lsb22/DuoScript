@@ -644,6 +644,8 @@ body.active::before {
 .contact-card {
   background-color: #edca7f;
   border-radius: 10px;
+  margin-left: 120px;
+  max-width: 400px;
 }
 
 .cont-input {
@@ -651,6 +653,11 @@ body.active::before {
   padding: 23px 0;
   color: black;
   border-radius: 10px;
+}
+
+.cont-input::placeholder {
+  color: black;
+  padding: 10px;
 }
 
 .cont-submit {
@@ -667,6 +674,76 @@ body.active::before {
 .contact-social-butt .butt {
   background-color: gold;
   box-shadow: 0 0 10px gold;
+  margin-right: 30px;
+  font-size: 0.8rem;
+  color: black;
+}
+
+@media (max-width: 1000.88px) and (min-width: 861px) {
+  .contact-hd1 {
+    font-size: 2.1rem;
+  }
+
+  .contact-hd2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-hd3-bt {
+    font-size: 0.9rem;
+  }
+
+  .contact-card {
+    margin-left: 60px;
+    max-width: 370px;
+  }
+}
+
+@media (max-width: 860.88px) and (min-width: 768px) {
+  .contact-hd1 {
+    font-size: 1.9rem;
+  }
+
+  .contact-hd2 {
+    font-size: 1.1rem;
+  }
+
+  .contact-hd3-bt {
+    font-size: 0.8rem;
+  }
+
+  .contact-card {
+    margin-left: 20px;
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 767.88px) {
+  .contact-hd1 {
+    font-size: 2.3rem;
+  }
+
+  .contact-hd2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-hd3-bt {
+    font-size: 1rem;
+  }
+
+  .contact-card-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-card {
+    width: 400px;
+    margin-top: 80px;
+    margin-left: 0;
+  }
+
+  .contact-section {
+    padding-bottom: 20px;
+  }
 }
 
 /* scroll-bar-stryles */
