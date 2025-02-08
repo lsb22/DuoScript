@@ -613,23 +613,31 @@ body.active::before {
   font-family: "Italianno", serif;
   font-size: 5rem;
   color: gold;
-  /* margin-bottom: 30px; */
 }
 
 .contact-hd1 {
+  font-family: "Merriweather", serif;
   font-size: 2.7rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
+.contact-hd1 span {
+  text-decoration: underline;
+  color: gold;
+  font-style: italic;
+}
+
 .contact-hd2 {
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 
 .contact-hd3-bt {
-  font-size: 1.2rem;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
   box-shadow: 0 0 10px gold;
 }
 

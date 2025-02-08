@@ -63,7 +63,7 @@ const ContactUs = () => {
 
   const handleClick = () => {
     navigator.clipboard
-      .writeText("abc@gmail.com")
+      .writeText("duoscript25@gmail.com")
       .then(() => alert("Email successfully copied"))
       .catch(() => alert("Failed to copy email."));
   };
@@ -77,7 +77,9 @@ const ContactUs = () => {
         <GridItem>
           <VStack>
             <Box textAlign="left">
-              <Text className="contact-hd1">How can we help you?</Text>
+              <Text className="contact-hd1">
+                How can we <span>help you?</span>
+              </Text>
               <Text className="contact-hd2">
                 Fill in the form or drop an email
               </Text>
@@ -88,7 +90,7 @@ const ContactUs = () => {
                   color="blue"
                   onClick={handleClick}
                 >
-                  <Text>abc@gmail.com</Text>
+                  <Text>duoscript25@gmail.com</Text>
                 </Button>
               </Tooltip>
             </Box>
