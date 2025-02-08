@@ -214,6 +214,7 @@ body {
 
 .title-sub {
   font-weight: bold;
+  font-family: "Merriweather", serif;
   text-decoration: underline;
   font-style: italic;
   background: linear-gradient(
