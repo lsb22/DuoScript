@@ -1,4 +1,4 @@
-import { Box, Card, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Card, Image, Text } from "@chakra-ui/react";
 import quality from "../assets/images/quality_img.jpg";
 import planning from "../assets/images/planning.jpg";
 import time from "../assets/images/timely_img.avif";
@@ -28,6 +28,24 @@ const AboutSection = () => {
     },
   ];
 
+  let active = 1;
+  const handleClick = (dir: string) => {
+    const items = document.querySelectorAll(".abt-card");
+
+    if (dir === "prev") {
+      active = active - 1 > -1 ? active - 1 : 2;
+    } else {
+      active = active + 1 < 3 ? active + 1 : 0;
+    }
+
+    for (let i = 0; i < 3; i++) {
+      let item = items[i] as HTMLElement;
+      if (i === active) {
+        item.style.opacity = "1";
+      } else item.style.opacity = "0";
+    }
+  };
+
   return (
     <Box className="section-about">
       <Box className="about-heading" textAlign="center">
@@ -39,13 +57,19 @@ const AboutSection = () => {
             <Image src={card.img} className="abt-card-img" />
             <Card.Body>
               <Card.Title className="abt-card-title">{card.title}</Card.Title>
-              <Card.Description color="blackAlpha.800">
+              <Card.Description color="blackAlpha.800" className="abt-desc">
                 {card.desc}
               </Card.Description>
             </Card.Body>
           </Card.Root>
         ))}
       </Box>
+      <Button id="prev" onClick={() => handleClick("prev")}>
+        {"<"}
+      </Button>
+      <Button id="next" onClick={() => handleClick("next")}>
+        {">"}
+      </Button>
     </Box>
   );
 };
