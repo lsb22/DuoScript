@@ -66,14 +66,14 @@ const Services = () => {
       </Box>
       <Box className="services-card-container" textAlign="center">
         {cards.map((card, index) => (
-          <Box className="services-card">
+          <Box className="services-card" key={index}>
             <Box className="dialog-container">
               <DialogRoot
                 placement="center"
                 motionPreset="slide-in-bottom"
                 closeOnInteractOutside={false}
               >
-                <DialogTrigger>
+                <DialogTrigger asChild>
                   <Button
                     className="service-card-desc"
                     onClick={handleOpenClick}
@@ -99,7 +99,7 @@ const Services = () => {
                     </Text>
                   </DialogBody>
                   <DialogFooter>
-                    <DialogActionTrigger>
+                    <DialogActionTrigger asChild>
                       <Button onClick={handleCloseClick}>Close</Button>
                     </DialogActionTrigger>
                   </DialogFooter>
@@ -107,12 +107,7 @@ const Services = () => {
                 </DialogContent>
               </DialogRoot>
             </Box>
-            <Image
-              className="services-card-img"
-              src={card.img}
-              // objectFit="cover"
-              key={index}
-            />
+            <Image className="services-card-img" src={card.img} />
           </Box>
         ))}
       </Box>
