@@ -107,7 +107,7 @@ body {
   }
 }
 
-/* cards-styles */
+/* display-cards styles */
 
 .cards {
   position: relative;
@@ -188,11 +188,20 @@ body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px) and (min-width: 495px) {
   .cards {
     height: 300px;
     width: 300px;
     margin-top: -80px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 494.88px) {
+  .cards {
+    height: 250px;
+    width: 250px;
+    margin-top: -100px;
     margin-bottom: 100px;
   }
 }
@@ -284,7 +293,7 @@ body {
   }
 }
 
-@media (max-width: 640.88px) {
+@media (max-width: 640.88px) and (min-width: 505px) {
   .title {
     font-size: 8.3rem;
   }
@@ -292,6 +301,27 @@ body {
   .display-name-stack {
     padding-left: 50px;
     padding-top: 30px;
+  }
+}
+
+@media (max-width: 504.88px) {
+  .title {
+    font-size: 6.5rem;
+  }
+
+  .display-text {
+    font-size: 1.2rem;
+    margin-top: -8px;
+    width: 330px;
+  }
+
+  .display-name-stack {
+    padding-left: 45px;
+    padding-top: 30px;
+  }
+
+  .display-butt {
+    margin-top: 40px;
   }
 }
 

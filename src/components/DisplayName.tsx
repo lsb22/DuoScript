@@ -6,7 +6,7 @@ const DisplayName = () => {
         <Text className="title">
           Duo<span className="title-script-part">Script</span>
         </Text>
-        <Box className="display-text" textAlign="center" fontWeight="400">
+        <Box className="display-text" textAlign="center">
           <Text>
             Crafting copys that <span className="title-sub">speak</span>,{" "}
             <span className="title-sub">connect</span>, and{" "}
