@@ -50,7 +50,7 @@ body {
   font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 1px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Merriweather", Times, serif;
 }
 
 .nav-butt:hover {
@@ -60,6 +60,8 @@ body {
 
 .nav-toggle {
   display: none;
+  font-family: "Merriweather", sans-serif;
+  color: gold;
 }
 
 @media (max-width: 773px) and (min-width: 641px) {
