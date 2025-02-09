@@ -297,6 +297,8 @@ body {
 
 .services-card {
   position: relative;
+  border: 2px solid gold;
+  border-radius: 10px;
 }
 
 .services-card-img {
@@ -344,6 +346,7 @@ body {
 }
 
 .services-card-container {
+  position: relative;
   padding: 10px;
   display: grid;
   grid-template-areas: "ph1 ph2 ph3" "ph4 ph2 ph5";
