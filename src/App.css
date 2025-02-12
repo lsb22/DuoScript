@@ -479,9 +479,16 @@ body.active::before {
   left: 50%;
 }
 
-@media (max-width: 1023.88px) {
+@media (max-width: 1023.88px) and (min-width: 484px) {
   .services-card-container {
     grid-template-areas: "ph1 ph2" "ph3 ph2" "ph4 ph5";
+  }
+}
+
+@media (max-width: 483.88px) {
+  .services-card-container {
+    grid-template-areas: "ph1" "ph2" "ph3" "ph4" "ph5";
+    padding: 20px;
   }
 }
 
