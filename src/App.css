@@ -843,7 +843,7 @@ body.active::before {
   }
 }
 
-@media (max-width: 767.88px) {
+@media (max-width: 767.88px) and (min-width: 504px) {
   .contact-hd1 {
     font-size: 2.3rem;
   }
@@ -865,6 +865,94 @@ body.active::before {
     width: 400px;
     margin-top: 80px;
     margin-left: 0;
+  }
+
+  .contact-social-butt .butt {
+    margin-right: 9px;
+  }
+
+  .contact-section {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 503.88px) and (min-width: 429px) {
+  .contact-heading {
+    font-size: 4rem;
+  }
+
+  .contact-hd1 {
+    font-size: 2rem;
+  }
+
+  .contact-hd2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-hd3-bt {
+    font-size: 0.8rem;
+  }
+
+  .contact-card-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-card {
+    width: 350px;
+    margin-top: 48px;
+    margin-left: 0;
+  }
+
+  .contact-social-butt .butt {
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+
+  .contact-section {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 428.88px) {
+  .contact-heading {
+    font-size: 3.5rem;
+  }
+
+  .contact-hd1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-hd2 {
+    font-size: 1.1rem;
+  }
+
+  .contact-hd3-bt {
+    font-size: 0.7rem;
+  }
+
+  .contact-card-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-card {
+    width: 320px;
+    margin-top: 48px;
+    margin-left: 0;
+  }
+
+  .cont-input {
+    padding: 2px 0;
+  }
+
+  .cont-input::placeholder {
+    padding: 5px;
+  }
+
+  .contact-social-butt .butt {
+    font-size: 0.8rem;
+    margin-right: 7px;
   }
 
   .contact-section {

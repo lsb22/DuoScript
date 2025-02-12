@@ -127,9 +127,15 @@ const ContactUs = () => {
         </GridItem>
       </SimpleGrid>
       <HStack className="contact-social-butt" justifyContent="center">
-        <Button className="butt">Twitter</Button>
-        <Button className="butt">Instagram</Button>
-        <Button className="butt">LinkedIn</Button>
+        <Button className="butt">
+          <Text>Twitter</Text>
+        </Button>
+        <Button className="butt">
+          <Text>Instagram</Text>
+        </Button>
+        <Button className="butt">
+          <Text>LinkedIn</Text>
+        </Button>
       </HStack>
     </Box>
   );
