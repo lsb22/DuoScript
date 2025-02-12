@@ -555,6 +555,8 @@ body.active::before {
 #prev,
 #next {
   display: none;
+  background: transparent;
+  color: white;
 }
 
 @media (max-width: 1023.88px) and (min-width: 991px) {
@@ -577,12 +579,17 @@ body.active::before {
     position: absolute;
     left: calc(50% - 200px);
     width: 400px;
-    height: 470px;
+    max-height: 470px;
   }
 
   .abt-card-img {
     object-fit: cover;
-    aspect-ratio: 4.7/3.1;
+    aspect-ratio: 5.6/3.3;
+  }
+
+  #prev,
+  #next {
+    font-size: 2rem;
   }
 
   #prev {
@@ -612,7 +619,7 @@ body.active::before {
   }
 }
 
-@media (max-width: 784.88px) {
+@media (max-width: 784.88px) and (min-width: 535px) {
   .abt-card-container {
     height: 500px;
   }
@@ -621,12 +628,17 @@ body.active::before {
     position: absolute;
     left: calc(50% - 175px);
     width: 350px;
-    height: 400px;
+    max-height: 400px;
   }
 
   .abt-card-img {
     object-fit: cover;
     aspect-ratio: 3.5/2.5;
+  }
+
+  #prev,
+  #next {
+    font-size: 2rem;
   }
 
   #prev {
@@ -635,6 +647,84 @@ body.active::before {
 
   #next {
     right: 18px;
+  }
+}
+
+@media (max-width: 534.88px) and (min-width: 430px) {
+  .abt-card-container {
+    height: 400px;
+  }
+
+  .abt-card {
+    position: absolute;
+    left: calc(50% - 140px);
+    width: 280px;
+    max-height: 350px;
+  }
+
+  .abt-card-img {
+    object-fit: cover;
+    aspect-ratio: 3.7/2.5;
+  }
+
+  #prev,
+  #next {
+    font-size: 1.8rem;
+  }
+
+  #prev {
+    left: 10px;
+  }
+
+  #next {
+    right: 10px;
+  }
+
+  .abt-card-title {
+    font-size: 1.1rem;
+  }
+
+  .abt-desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 429.88px) {
+  .abt-card-container {
+    height: 400px;
+  }
+
+  .abt-card {
+    position: absolute;
+    width: 240px;
+    max-height: 320px;
+    left: calc(50% - 120px);
+  }
+
+  .abt-card-img {
+    object-fit: cover;
+    aspect-ratio: 4.5/2.5;
+  }
+
+  #prev,
+  #next {
+    font-size: 1.5rem;
+  }
+
+  #prev {
+    left: 2px;
+  }
+
+  #next {
+    right: 2px;
+  }
+
+  .abt-card-title {
+    font-size: 1.1rem;
+  }
+
+  .abt-desc {
+    font-size: 0.9rem;
   }
 }
 
