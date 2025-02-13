@@ -14,7 +14,11 @@ import {
 } from "@chakra-ui/react";
 import logo from "../assets/images/duo_script_logo.png";
 
-const NavBar = () => {
+interface Props {
+  scrollToServices: () => void;
+}
+
+const NavBar = ({ scrollToServices }: Props) => {
   return (
     <HStack justifyContent="space-between">
       <Box pl={8}>
@@ -25,7 +29,7 @@ const NavBar = () => {
           mr={8}
           variant="ghost"
           className="nav-butt"
-          onClick={() => window.scrollTo(0, 660)}
+          onClick={() => scrollToServices()}
         >
           Service
         </Button>

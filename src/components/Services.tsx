@@ -15,6 +15,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "../components/ui/dialog";
+import { useEffect, useRef } from "react";
 
 interface ServiceCardProps {
   img: string;
@@ -22,7 +23,17 @@ interface ServiceCardProps {
   desc: String;
 }
 
-const Services = () => {
+interface Props {
+  servRef: (ref: React.RefObject<HTMLDivElement>) => void;
+}
+
+const Services = ({ servRef }: Props) => {
+  const services_ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (services_ref.current) servRef(services_ref);
+  });
+
   const cards: ServiceCardProps[] = [
     {
       img: email,
@@ -61,6 +72,7 @@ const Services = () => {
 
   return (
     <Box className="services">
+      <Box ref={services_ref}></Box>
       <Box textAlign="center">
         <Text className="services-text">Services</Text>
       </Box>

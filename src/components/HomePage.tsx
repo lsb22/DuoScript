@@ -5,7 +5,17 @@ import DisplayName from "./DisplayName";
 import NavBar from "./NavBar";
 import Services from "./Services";
 import ContactUs from "./ContactUs";
+import { useRef } from "react";
 const HomePage = () => {
+  let services_ref = useRef<HTMLDivElement>(null);
+
+  const setServicesRef = (ref: React.RefObject<HTMLDivElement>) => {
+    services_ref = ref;
+  };
+
+  const scrollToServices = () => {
+    if (services_ref.current) services_ref.current.scrollIntoView();
+  };
   return (
     <>
       <Box className=" section section-1">
@@ -18,7 +28,7 @@ const HomePage = () => {
           templateColumns={{ lg: "50vw 50vw" }}
         >
           <GridItem area={"nav"}>
-            <NavBar />
+            <NavBar scrollToServices={scrollToServices} />
           </GridItem>
           <GridItem area={"cards"} pt={20}>
             <Flex justifyContent="center">
@@ -31,7 +41,7 @@ const HomePage = () => {
         </Grid>
       </Box>
       <Box className="section section-2">
-        <Services />
+        <Services servRef={setServicesRef} />
       </Box>
       <Box className="section section-3">
         <AboutSection />
