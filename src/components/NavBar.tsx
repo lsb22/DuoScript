@@ -68,9 +68,15 @@ const NavBar = ({
           </DrawerTrigger>
           <DrawerContent offset="4" rounded="md" className="nav-drawer-content">
             <DrawerBody className="drawer-text">
-              <p onClick={() => alert("1st p clicked")}>Services</p>
-              <p>About</p>
-              <p>Contact</p>
+              <DrawerActionTrigger border="none" display="block">
+                <p onClick={() => scrollToServices()}>Services</p>
+              </DrawerActionTrigger>
+              <DrawerActionTrigger border="none" display="block">
+                <p onClick={() => scrollToAbout()}>About</p>
+              </DrawerActionTrigger>
+              <DrawerActionTrigger border="none" display="block">
+                <p onClick={() => scrollToContact()}>Contact</p>
+              </DrawerActionTrigger>
             </DrawerBody>
             <DrawerFooter>
               <DrawerActionTrigger asChild>
