@@ -520,6 +520,7 @@ body.active::before {
 
 .service-dialog-desc {
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .dialog-container {
@@ -551,6 +552,36 @@ body.active::before {
 @media (max-width: 550.88px) {
   .service-card-desc {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 483.88px) and (min-width: 412px) {
+  .service-dialog-title {
+    font-size: 1.2rem;
+  }
+
+  .service-dialog-desc {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .services-dialog {
+    width: 70%;
+  }
+}
+
+@media (max-width: 411.88px) {
+  .service-dialog-title {
+    font-size: 1rem;
+  }
+
+  .service-dialog-desc {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .services-dialog {
+    width: 80%;
   }
 }
 

@@ -72,6 +72,7 @@ const Services = () => {
                 placement="center"
                 motionPreset="slide-in-bottom"
                 closeOnInteractOutside={false}
+                size={{ lg: "md", sm: "xs" }}
               >
                 <DialogTrigger asChild>
                   <Button
@@ -93,7 +94,7 @@ const Services = () => {
                     <Text
                       className="service-dialog-desc"
                       wordSpacing={2}
-                      letterSpacing={1}
+                      color="black"
                     >
                       {card.desc}
                     </Text>
