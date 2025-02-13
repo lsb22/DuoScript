@@ -8,13 +8,22 @@ import ContactUs from "./ContactUs";
 import { useRef } from "react";
 const HomePage = () => {
   let services_ref = useRef<HTMLDivElement>(null);
+  let about_ref = useRef<HTMLDivElement>(null);
 
   const setServicesRef = (ref: React.RefObject<HTMLDivElement>) => {
     services_ref = ref;
   };
 
+  const setAboutRef = (ref: React.RefObject<HTMLDivElement>) => {
+    about_ref = ref;
+  };
+
   const scrollToServices = () => {
     if (services_ref.current) services_ref.current.scrollIntoView();
+  };
+
+  const scrollToAbout = () => {
+    if (about_ref.current) about_ref.current.scrollIntoView();
   };
   return (
     <>
@@ -28,7 +37,10 @@ const HomePage = () => {
           templateColumns={{ lg: "50vw 50vw" }}
         >
           <GridItem area={"nav"}>
-            <NavBar scrollToServices={scrollToServices} />
+            <NavBar
+              scrollToServices={scrollToServices}
+              scrollToAbout={scrollToAbout}
+            />
           </GridItem>
           <GridItem area={"cards"} pt={20}>
             <Flex justifyContent="center">
@@ -44,7 +56,7 @@ const HomePage = () => {
         <Services servRef={setServicesRef} />
       </Box>
       <Box className="section section-3">
-        <AboutSection />
+        <AboutSection aboutRef={setAboutRef} />
       </Box>
       <Box className="section section-4">
         <ContactUs />

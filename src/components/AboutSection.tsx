@@ -2,6 +2,7 @@ import { Box, Button, Card, Image, Text } from "@chakra-ui/react";
 import quality from "../assets/images/quality_img.jpg";
 import planning from "../assets/images/planning.jpg";
 import time from "../assets/images/timely_img.avif";
+import { useEffect, useRef } from "react";
 
 interface CardsStucture {
   title: string;
@@ -9,7 +10,17 @@ interface CardsStucture {
   img: string;
 }
 
-const AboutSection = () => {
+interface Props {
+  aboutRef: (ref: React.RefObject<HTMLDivElement>) => void;
+}
+
+const AboutSection = ({ aboutRef }: Props) => {
+  const about_ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (about_ref.current) aboutRef(about_ref);
+  });
+
   const cardsData: CardsStucture[] = [
     {
       title: "Quality And Originality",
@@ -48,6 +59,7 @@ const AboutSection = () => {
 
   return (
     <Box className="section-about">
+      <Box ref={about_ref}></Box>
       <Box className="about-heading" textAlign="center">
         <Text>WhyUs?</Text>
       </Box>
