@@ -1,5 +1,10 @@
 import { Box, Button, Text, VStack } from "@chakra-ui/react";
-const DisplayName = () => {
+
+interface Props {
+  scrollToContact: () => void;
+}
+
+const DisplayName = ({ scrollToContact }: Props) => {
   return (
     <Box className="display-name-container">
       <VStack className="display-name-stack">
@@ -13,7 +18,11 @@ const DisplayName = () => {
             <span className="title-sub">convert</span>
           </Text>
         </Box>
-        <Button className="display-butt" colorPalette="yellow">
+        <Button
+          className="display-butt"
+          colorPalette="yellow"
+          onClick={() => scrollToContact()}
+        >
           <Text className="home-button-text">Contact</Text>
         </Button>
       </VStack>

@@ -59,7 +59,7 @@ const HomePage = () => {
             </Flex>
           </GridItem>
           <GridItem area={"Name"}>
-            <DisplayName />
+            <DisplayName scrollToContact={scrollToContact} />
           </GridItem>
         </Grid>
       </Box>
