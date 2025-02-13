@@ -97,6 +97,17 @@ body {
   font-weight: 500;
 }
 
+@media (min-width: 1900px) {
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+
+  .nav-butt {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 773px) and (min-width: 641px) {
   .logo {
     height: 60px;
