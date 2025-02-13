@@ -241,6 +241,12 @@ body {
   font-family: "Merriweather", sans-serif;
 }
 
+@media (min-height: 680px) {
+  .card {
+    margin-top: -80px;
+  }
+}
+
 @media (min-width: 2540px) {
   .cards {
     height: 740px;
