@@ -647,6 +647,12 @@ body.active::before {
   left: 50%;
 }
 
+@media (min-width: 1900px) {
+  .services-text {
+    font-size: 7rem;
+  }
+}
+
 @media (max-width: 1023.88px) and (min-width: 484px) {
   .services-card-container {
     grid-template-areas: "ph1 ph2" "ph3 ph2" "ph4 ph5";
