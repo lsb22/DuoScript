@@ -987,7 +987,7 @@ body.active::before {
   }
 }
 
-@media (max-width: 428.88px) {
+@media (max-width: 428.88px) and (min-width: 361px) {
   .contact-heading {
     font-size: 3.5rem;
   }
@@ -1030,6 +1030,57 @@ body.active::before {
 
   .contact-section {
     padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 360.88px) {
+  .contact-heading {
+    font-size: 3.5rem;
+  }
+
+  .contact-hd1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-hd2 {
+    font-size: 1rem;
+  }
+
+  .contact-hd3-bt {
+    font-size: 0.6rem;
+  }
+
+  .contact-card-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-card {
+    width: 273px;
+    margin-top: 48px;
+    margin-left: 0;
+  }
+
+  .cont-input {
+    padding: 0;
+  }
+
+  .cont-input::placeholder {
+    padding: 5px;
+    font-size: 11px;
+  }
+
+  .contact-social-butt .butt {
+    font-size: 0.7rem;
+    margin-right: 5px;
+  }
+
+  .contact-section {
+    padding-bottom: 20px;
+  }
+
+  .cont-submit {
+    font-size: 0.9rem;
   }
 }
 
