@@ -27,6 +27,11 @@ body {
   min-height: 100vh;
 }
 
+.section-2,
+.section-3 {
+  margin-bottom: 100px;
+}
+
 /* nav-styles */
 
 .nav-logo {
@@ -225,6 +230,24 @@ body {
   font-family: "Merriweather", sans-serif;
 }
 
+@media (min-width: 2540px) {
+  .cards {
+    height: 740px;
+    width: 740px;
+  }
+
+  .display-card-desc {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1589.88px) and (max-width: 2539.88px) {
+  .cards {
+    height: 450px;
+    width: 450px;
+  }
+}
+
 @media (max-width: 1023.88px) and (min-width: 774px) {
   .cards {
     margin-top: 80px;
@@ -339,6 +362,42 @@ body {
 .home-button-text {
   font-family: "Italianno", serif;
   font-size: 1.8rem;
+}
+
+@media (min-width: 2540px) {
+  .title {
+    font-size: 22rem;
+  }
+
+  .display-text {
+    font-size: 3rem;
+    width: 800px;
+    margin-top: -20px;
+  }
+
+  .display-butt {
+    padding: 40px;
+    border-radius: 12px;
+  }
+
+  .home-button-text {
+    font-size: 4.4rem;
+  }
+}
+
+@media (min-width: 1588.88px) and (max-width: 2539.88px) {
+  .title {
+    font-size: 14rem;
+  }
+
+  .display-text {
+    font-size: 2rem;
+    width: 520px;
+  }
+
+  .home-button-text {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 1023.88px) {
@@ -1122,10 +1181,6 @@ body.active::before {
   .contact-social-butt .butt {
     margin-right: 9px;
   }
-
-  /* .contact-section {
-    padding-bottom: 20px;
-  } */
 }
 
 @media (max-width: 503.88px) and (min-width: 429px) {
@@ -1160,10 +1215,6 @@ body.active::before {
     font-size: 0.8rem;
     margin-right: 10px;
   }
-
-  /* .contact-section {
-    padding-bottom: 20px;
-  } */
 }
 
 @media (max-width: 428.88px) and (min-width: 361px) {
@@ -1206,10 +1257,6 @@ body.active::before {
     font-size: 0.8rem;
     margin-right: 7px;
   }
-
-  /* .contact-section {
-    padding-bottom: 20px;
-  } */
 }
 
 @media (max-width: 360.88px) {
@@ -1253,10 +1300,6 @@ body.active::before {
     font-size: 0.7rem;
     margin-right: 5px;
   }
-
-  /* .contact-section {
-    padding-bottom: 20px;
-  } */
 
   .cont-submit {
     font-size: 0.9rem;
