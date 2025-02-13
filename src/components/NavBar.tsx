@@ -17,9 +17,14 @@ import logo from "../assets/images/duo_script_logo.png";
 interface Props {
   scrollToServices: () => void;
   scrollToAbout: () => void;
+  scrollToContact: () => void;
 }
 
-const NavBar = ({ scrollToServices, scrollToAbout }: Props) => {
+const NavBar = ({
+  scrollToServices,
+  scrollToAbout,
+  scrollToContact,
+}: Props) => {
   return (
     <HStack justifyContent="space-between">
       <Box pl={8}>
@@ -46,7 +51,7 @@ const NavBar = ({ scrollToServices, scrollToAbout }: Props) => {
           mr={8}
           variant="ghost"
           className="nav-butt"
-          onClick={() => window.scrollTo(0, 2000)}
+          onClick={() => scrollToContact()}
         >
           Contact
         </Button>

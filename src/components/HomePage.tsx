@@ -9,6 +9,7 @@ import { useRef } from "react";
 const HomePage = () => {
   let services_ref = useRef<HTMLDivElement>(null);
   let about_ref = useRef<HTMLDivElement>(null);
+  let contact_ref = useRef<HTMLDivElement>(null);
 
   const setServicesRef = (ref: React.RefObject<HTMLDivElement>) => {
     services_ref = ref;
@@ -18,6 +19,10 @@ const HomePage = () => {
     about_ref = ref;
   };
 
+  const setContactRef = (ref: React.RefObject<HTMLDivElement>) => {
+    contact_ref = ref;
+  };
+
   const scrollToServices = () => {
     if (services_ref.current) services_ref.current.scrollIntoView();
   };
@@ -25,6 +30,11 @@ const HomePage = () => {
   const scrollToAbout = () => {
     if (about_ref.current) about_ref.current.scrollIntoView();
   };
+
+  const scrollToContact = () => {
+    if (contact_ref.current) contact_ref.current.scrollIntoView();
+  };
+
   return (
     <>
       <Box className=" section section-1">
@@ -40,6 +50,7 @@ const HomePage = () => {
             <NavBar
               scrollToServices={scrollToServices}
               scrollToAbout={scrollToAbout}
+              scrollToContact={scrollToContact}
             />
           </GridItem>
           <GridItem area={"cards"} pt={20}>
@@ -59,7 +70,7 @@ const HomePage = () => {
         <AboutSection aboutRef={setAboutRef} />
       </Box>
       <Box className="section section-4">
-        <ContactUs />
+        <ContactUs contactRef={setContactRef} />
       </Box>
     </>
   );

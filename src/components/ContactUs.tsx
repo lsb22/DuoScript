@@ -13,8 +13,19 @@ import {
 } from "@chakra-ui/react";
 
 import { Tooltip } from "../components/ui/tooltip";
+import { useEffect, useRef } from "react";
 
-const ContactUs = () => {
+interface Props {
+  contactRef: (ref: React.RefObject<HTMLDivElement>) => void;
+}
+
+const ContactUs = ({ contactRef }: Props) => {
+  const contact_ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (contact_ref.current) contactRef(contact_ref);
+  });
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -45,6 +56,7 @@ const ContactUs = () => {
 
   return (
     <Box className="contact-section">
+      <Box ref={contact_ref}></Box>
       <Box textAlign="center">
         <Text className="contact-heading">Contact Us</Text>
       </Box>
