@@ -166,7 +166,7 @@ body {
   background-color: #edca7f;
   color: rgb(53, 69, 194);
   border-radius: 25px;
-  border: none;
+  border: 2px solid gold;
   position: absolute;
   top: 0;
   left: 0;
