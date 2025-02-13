@@ -694,6 +694,87 @@ body.active::before {
   color: white;
 }
 
+@media (min-width: 3840px) {
+  .abt-card-title {
+    font-size: 4rem;
+    margin-top: 5%;
+    margin-bottom: 4%;
+  }
+
+  .abt-desc {
+    font-size: 3rem;
+  }
+
+  .about-heading {
+    font-size: 11rem;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 3839.88px) {
+  .abt-card-title {
+    font-size: 2.6rem;
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+
+  .abt-desc {
+    font-size: 2rem;
+  }
+
+  .about-heading {
+    font-size: 9rem;
+  }
+
+  .abt-card {
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 1920.88px) and (max-width: 2559.88px) {
+  .abt-card-title {
+    font-size: 2.2rem;
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+
+  .abt-desc {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2559.88px) {
+  .about-heading {
+    font-size: 6.6rem;
+  }
+}
+
+@media (min-width: 1420px) and (max-width: 1920px) {
+  .abt-card-title {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .abt-desc {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1420px) {
+  .abt-card {
+    height: 90%;
+  }
+
+  .abt-card:nth-child(1),
+  .abt-card:nth-child(3) {
+    height: 70%;
+  }
+
+  .abt-card-img {
+    height: 60%;
+  }
+}
+
 @media (max-width: 1023.88px) and (min-width: 991px) {
   .abt-card-container {
     grid-template-columns: 3fr 4fr 3fr;
