@@ -1117,6 +1117,131 @@ body.active::before {
   color: black;
 }
 
+@media (min-width: 2500px) {
+  .contact-heading {
+    font-size: 10rem;
+  }
+
+  .contact-hd1 {
+    font-size: 6rem;
+  }
+
+  .contact-hd2 {
+    font-size: 3rem;
+    margin-bottom: 70px;
+  }
+
+  .contact-hd3-bt {
+    padding: 40px;
+    font-size: 2rem;
+  }
+
+  .contact-card {
+    max-width: 800px;
+  }
+
+  .cont-input {
+    padding: 55px 0;
+    font-size: 2rem;
+  }
+
+  .cont-input::placeholder {
+    font-size: 1.8rem;
+  }
+
+  .cont-submit {
+    font-size: 1.8rem;
+    padding: 32px 62px;
+  }
+
+  .contact-social-butt .butt {
+    font-size: 1.8rem;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1900px) and (max-width: 2499.88px) {
+  .contact-heading {
+    font-size: 7rem;
+  }
+
+  .contact-hd1 {
+    font-size: 4.3rem;
+  }
+
+  .contact-hd2 {
+    font-size: 2.6rem;
+    margin-bottom: 70px;
+  }
+
+  .contact-hd3-bt {
+    padding: 30px;
+    font-size: 1.7rem;
+  }
+
+  .contact-card {
+    max-width: 600px;
+  }
+
+  .cont-input {
+    padding: 45px 0;
+    font-size: 1.6rem;
+  }
+
+  .cont-input::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .cont-submit {
+    font-size: 1.5rem;
+    padding: 28px 50px;
+  }
+
+  .contact-social-butt .butt {
+    font-size: 1.5rem;
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1550px) and (max-width: 1899.88px) {
+  .contact-hd1 {
+    font-size: 3.7rem;
+  }
+
+  .contact-hd2 {
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+  }
+
+  .contact-hd3-bt {
+    padding: 25px;
+    font-size: 1.4rem;
+  }
+
+  .contact-card {
+    max-width: 500px;
+  }
+
+  .cont-input {
+    padding: 35px 0;
+    font-size: 1.3rem;
+  }
+
+  .cont-input::placeholder {
+    font-size: 1.3rem;
+  }
+
+  .cont-submit {
+    font-size: 1.4rem;
+    padding: 24px 45px;
+  }
+
+  .contact-social-butt .butt {
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+}
+
 @media (max-width: 767.88px) {
   .contact-card {
     margin-bottom: 120px;
