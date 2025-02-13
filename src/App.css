@@ -745,6 +745,21 @@ body.active::before {
   }
 }
 
+@media (max-width: 429.88px) and (min-width: 361px) {
+  #prev,
+  #next {
+    font-size: 1.5rem;
+  }
+
+  #prev {
+    left: 2px;
+  }
+
+  #next {
+    right: 2px;
+  }
+}
+
 @media (max-width: 429.88px) {
   .abt-card-container {
     height: 400px;
@@ -762,25 +777,27 @@ body.active::before {
     aspect-ratio: 4.5/2.5;
   }
 
-  #prev,
-  #next {
-    font-size: 1.5rem;
-  }
-
-  #prev {
-    left: 2px;
-  }
-
-  #next {
-    right: 2px;
-  }
-
   .abt-card-title {
     font-size: 1.1rem;
   }
 
   .abt-desc {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360.88px) {
+  #prev,
+  #next {
+    font-size: 1.2rem;
+  }
+
+  #prev {
+    left: 0.5px;
+  }
+
+  #next {
+    right: 0.5px;
   }
 }
 
