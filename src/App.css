@@ -657,7 +657,7 @@ body.active::before {
   overflow: hidden;
   background-color: rgba(255, 217, 0, 0.858);
   color: black;
-  border: 1px solid white;
+  border: 2px solid gold;
   box-shadow: 0 0 10px gold;
 }
 
