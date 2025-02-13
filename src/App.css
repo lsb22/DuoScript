@@ -776,6 +776,12 @@ body.active::before {
   color: white;
 }
 
+@media (min-height: 680px) {
+  .about-heading {
+    margin-bottom: 80px;
+  }
+}
+
 @media (min-width: 3840px) {
   .abt-card-title {
     font-size: 4rem;
