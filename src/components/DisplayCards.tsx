@@ -45,7 +45,7 @@ const DisplayCards = () => {
         >
           <Image src={card.img} objectFit="cover" />
           <Card.Body>
-            <Text fontSize="2rem" fontWeight="500">
+            <Text fontWeight="500" className="display-card-desc">
               {card.desc}
             </Text>
           </Card.Body>
