@@ -1,4 +1,17 @@
-import { HStack, Box, Button, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  DrawerActionTrigger,
+  DrawerBackdrop,
+  DrawerBody,
+  DrawerCloseTrigger,
+  DrawerContent,
+  DrawerFooter,
+  DrawerRoot,
+  DrawerTrigger,
+  HStack,
+  Image,
+} from "@chakra-ui/react";
 import logo from "../assets/images/duo_script_logo.png";
 
 const NavBar = () => {
@@ -32,8 +45,38 @@ const NavBar = () => {
         >
           Contact
         </Button>
-        <Box className="nav-toggle">Open</Box>
       </HStack>
+      <Box className="nav-drawer">
+        <DrawerRoot>
+          <DrawerBackdrop />
+          <DrawerTrigger asChild>
+            <Box className="hamburger-menu">
+              <Box className="bar"></Box>
+              <Box className="bar"></Box>
+              <Box className="bar"></Box>
+            </Box>
+          </DrawerTrigger>
+          <DrawerContent offset="4" rounded="md" className="nav-drawer-content">
+            <DrawerBody className="drawer-text">
+              <p onClick={() => alert("1st p clicked")}>Services</p>
+              <p>About</p>
+              <p>Contact</p>
+            </DrawerBody>
+            <DrawerFooter>
+              <DrawerActionTrigger asChild>
+                <Button
+                  variant="outline"
+                  color="#010203"
+                  _hover={{ color: "white" }}
+                >
+                  Close
+                </Button>
+              </DrawerActionTrigger>
+            </DrawerFooter>
+            <DrawerCloseTrigger />
+          </DrawerContent>
+        </DrawerRoot>
+      </Box>
     </HStack>
   );
 };
