@@ -247,9 +247,27 @@ body {
   font-family: "Merriweather", sans-serif;
 }
 
+@media (max-height: 407.88px) {
+  .card {
+    margin-top: 180px;
+  }
+}
+
+@media (max-height: 474.88px) and (min-height: 408px) {
+  .card {
+    margin-top: 100px;
+  }
+}
+
+@media (max-height: 532px) and (min-height: 475px) {
+  .card {
+    margin-top: 50px;
+  }
+}
+
 @media (min-height: 680px) {
   .card {
-    margin-top: -80px;
+    margin-top: -100px;
   }
 }
 
