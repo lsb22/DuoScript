@@ -712,11 +712,15 @@ body.active::before {
 
 .service-dialog-title {
   font-size: 1.5rem;
+  color: rgb(161, 31, 132);
 }
 
 .service-dialog-desc {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.573);
 }
 
 .dialog-container {
@@ -759,11 +763,11 @@ body.active::before {
 
 @media (max-width: 483.88px) and (min-width: 412px) {
   .service-dialog-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .service-dialog-desc {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 
@@ -774,11 +778,11 @@ body.active::before {
 
 @media (max-width: 411.88px) {
   .service-dialog-title {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .service-dialog-desc {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 
