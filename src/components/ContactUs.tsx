@@ -24,7 +24,7 @@ const ContactUs = ({ contactRef }: Props) => {
 
   useEffect(() => {
     if (contact_ref.current) contactRef(contact_ref);
-  });
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

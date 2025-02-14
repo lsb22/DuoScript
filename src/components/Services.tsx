@@ -32,7 +32,7 @@ const Services = ({ servRef }: Props) => {
 
   useEffect(() => {
     if (services_ref.current) servRef(services_ref);
-  });
+  }, []);
 
   const cards: ServiceCardProps[] = [
     {

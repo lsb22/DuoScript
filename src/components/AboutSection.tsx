@@ -19,7 +19,7 @@ const AboutSection = ({ aboutRef }: Props) => {
 
   useEffect(() => {
     if (about_ref.current) aboutRef(about_ref);
-  });
+  }, []);
 
   const cardsData: CardsStucture[] = [
     {
