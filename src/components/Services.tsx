@@ -32,6 +32,19 @@ const Services = ({ servRef }: Props) => {
 
   useEffect(() => {
     if (services_ref.current) servRef(services_ref);
+    const elements = document.querySelectorAll(".services-card");
+
+    elements.forEach((element) => {
+      element.addEventListener("touchstart", () => {
+        element.classList.add("touch-hover-effect");
+      });
+
+      element.addEventListener("touchend", () => {
+        setTimeout(() => {
+          element.classList.remove("touch-hover-effect");
+        }, 1200);
+      });
+    });
   }, []);
 
   const cards: ServiceCardProps[] = [
@@ -88,7 +101,7 @@ const Services = ({ servRef }: Props) => {
               >
                 <DialogTrigger asChild>
                   <Button
-                    className="service-card-desc"
+                    className="service-card-desc button-to-move"
                     onClick={handleOpenClick}
                   >
                     {card.title}
