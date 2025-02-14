@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 580px) {
   body {
     background-image: linear-gradient(-90deg, #3858b1, #406be1, #214abd);
   }
