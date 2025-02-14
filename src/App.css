@@ -462,11 +462,11 @@ body {
 
 @media (max-width: 502.88px) and (min-width: 401px) {
   .title {
-    font-size: 7rem;
+    font-size: 7.2rem;
   }
 
   .display-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: -8px;
     width: 330px;
   }
@@ -475,20 +475,25 @@ body {
     padding-top: 30px;
   }
 
+  .home-button-text {
+    font-size: 2.2rem;
+  }
+
   .display-butt {
+    padding: 20px;
     margin-top: 40px;
   }
 }
 
-@media (max-width: 400.88px) {
+@media (max-width: 400.88px) and (min-width: 361px) {
   .title {
-    font-size: 5.5rem;
+    font-size: 6.5rem;
   }
 
   .display-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: -8px;
-    width: 280px;
+    width: 320px;
   }
 
   .display-name-stack {
@@ -496,7 +501,32 @@ body {
   }
 
   .home-button-text {
-    font-size: 1.3rem;
+    font-size: 2rem;
+  }
+
+  .display-butt {
+    padding: 20px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 360.88px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .display-text {
+    font-size: 1rem;
+    margin-top: -8px;
+    width: 320px;
+  }
+
+  .display-name-stack {
+    padding-top: 50px;
+  }
+
+  .home-button-text {
+    font-size: 1.9rem;
   }
 
   .display-butt {
