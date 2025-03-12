@@ -53,7 +53,7 @@ const HomePage = () => {
               scrollToContact={scrollToContact}
             />
           </GridItem>
-          <GridItem area={"cards"} pt={20}>
+          <GridItem area={"cards"}>
             <Flex justifyContent="center">
               <DisplayCards />
             </Flex>

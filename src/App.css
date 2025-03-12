@@ -184,6 +184,7 @@ body {
   position: relative;
   height: 360px;
   width: 360px;
+  margin-top: 80px;
 }
 
 .card {
@@ -250,26 +251,20 @@ body {
 }
 
 @media (max-height: 407.88px) {
-  .card {
-    margin-top: 180px;
+  .cards {
+    margin-top: 300px;
   }
 }
 
 @media (max-height: 474.88px) and (min-height: 408px) {
-  .card {
-    margin-top: 100px;
+  .cards {
+    margin-top: 250px;
   }
 }
 
 @media (max-height: 532px) and (min-height: 475px) {
-  .card {
-    margin-top: 50px;
-  }
-}
-
-@media (min-height: 680px) {
-  .card {
-    margin-top: -100px;
+  .cards {
+    margin-top: 150px;
   }
 }
 
@@ -302,7 +297,12 @@ body {
   .cards {
     height: 320px;
     width: 320px;
-    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cards {
+    margin-top: 0;
   }
 }
 
@@ -310,8 +310,6 @@ body {
   .cards {
     height: 300px;
     width: 300px;
-    margin-top: -80px;
-    margin-bottom: 100px;
   }
 }
 
@@ -319,8 +317,6 @@ body {
   .cards {
     height: 250px;
     width: 250px;
-    margin-top: -100px;
-    margin-bottom: 100px;
   }
 
   .display-card-desc {
@@ -332,8 +328,6 @@ body {
   .cards {
     height: 220px;
     width: 220px;
-    margin-top: -140px;
-    margin-bottom: 100px;
   }
 
   .display-card-desc {
