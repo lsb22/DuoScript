@@ -1,14 +1,9 @@
-import { Box, Button, Card, Image, Text } from "@chakra-ui/react";
-import quality from "../assets/images/quality_img.jpg";
-import planning from "../assets/images/planning.jpg";
-import time from "../assets/images/timely_img.avif";
 import { useEffect, useRef } from "react";
-
-interface CardsStucture {
-  title: string;
-  desc: string;
-  img: string;
-}
+import { Box, Stack, Text } from "@chakra-ui/react";
+import challenge from "../assets/images/challenge.png";
+import truck from "../assets/images/delivery-truck.png";
+import quality from "../assets/images/high-quality.png";
+import brothers from "../assets/images/brothers_img1.jpg";
 
 interface Props {
   aboutRef: (ref: React.RefObject<HTMLDivElement>) => void;
@@ -21,68 +16,111 @@ const AboutSection = ({ aboutRef }: Props) => {
     if (about_ref.current) aboutRef(about_ref);
   }, []);
 
-  const cardsData: CardsStucture[] = [
-    {
-      title: "Quality And Originality",
-      desc: "We prioritize quality and originality in every word we write.",
-      img: quality,
-    },
-    {
-      title: "Systematic Approach",
-      desc: "With experience across industries and platforms, we tailor our approach to meet your specific needs.",
-      img: planning,
-    },
-    {
-      title: "Timely Delivery",
-      desc: "Timely delivery is our commitment, ensuring your projects stay on track.",
-      img: time,
-    },
-  ];
-
-  let active = 1;
-  const handleClick = (dir: string) => {
-    const items = document.querySelectorAll(".abt-card");
-
-    if (dir === "prev") {
-      active = active - 1 > -1 ? active - 1 : 2;
-    } else {
-      active = active + 1 < 3 ? active + 1 : 0;
-    }
-
-    for (let i = 0; i < 3; i++) {
-      let item = items[i] as HTMLElement;
-      if (i === active) {
-        item.style.opacity = "1";
-      } else item.style.opacity = "0";
-    }
-  };
-
   return (
-    <Box className="section-about">
+    <div className="abt-grid">
       <Box ref={about_ref}></Box>
-      <Box className="about-heading" textAlign="center">
-        <Text>WhyUs?</Text>
-      </Box>
-      <Box className="abt-card-container">
-        {cardsData.map((card, index) => (
-          <Card.Root key={index} className="abt-card">
-            <Image src={card.img} className="abt-card-img" />
-            <Card.Body>
-              <Card.Title className="abt-card-title">{card.title}</Card.Title>
-              <Card.Description color="blackAlpha.800" className="abt-desc">
-                {card.desc}
-              </Card.Description>
-            </Card.Body>
-          </Card.Root>
-        ))}
-      </Box>
-      <Button id="prev" onClick={() => handleClick("prev")}>
-        {"<"}
-      </Button>
-      <Button id="next" onClick={() => handleClick("next")}>
-        {">"}
-      </Button>
-    </Box>
+      <div className="about-container">
+        <div className="about-div1">
+          <img className="abt-img" src={brothers} />
+        </div>
+        <div className="about-div2">
+          <Stack>
+            <Box>
+              <Text className="abt-div2-desc-h1">About Us</Text>
+            </Box>
+            <Box>
+              <Text className="abt-div2-desc-h2">
+                What exactly does Duoscript do ?
+              </Text>
+            </Box>
+            <Box>
+              <Text className="abt-div2-desc-h3">
+                Duoscript works on writing a content which can capitalize by
+                converting a piece of copy into Sales. Expertised in writing
+                Email copys to promote a brand's product which makes their
+                customers to take actions towards it.
+              </Text>
+            </Box>
+          </Stack>
+        </div>
+        <div className="about-div3">
+          <Stack>
+            <Box>
+              <Text className="abt-div3-desc-h1">
+                Why should you work with Duoscript?
+              </Text>
+            </Box>
+            <Box>
+              <ul className="abt-div3-desc-ul">
+                <li>
+                  Duoscript is Trust worthy by keeping a{" "}
+                  <span
+                    style={{
+                      color: "gold",
+                      fontStyle: "italic",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    good relationship
+                  </span>{" "}
+                  with their partners.
+                </li>
+                <li>
+                  There are currently{" "}
+                  <span
+                    style={{
+                      color: "gold",
+                      fontStyle: "italic",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    2 partners
+                  </span>{" "}
+                  who have kept their Trust on Duoscript
+                </li>
+                <li>
+                  What more would you need to{" "}
+                  <span
+                    style={{
+                      color: "gold",
+                      fontStyle: "italic",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Trust
+                  </span>{" "}
+                  ???
+                </li>
+              </ul>
+            </Box>
+          </Stack>
+        </div>
+      </div>
+      <div className="about-container2">
+        <div className="about-div4">
+          <Stack justifyContent="center" alignItems="center" height="100%">
+            <img src={truck} />
+            <Text className="abt-div4-h1">
+              Timely Delivery of your Email copys.
+            </Text>
+          </Stack>
+        </div>
+        <div className="about-div5">
+          <Stack justifyContent="center" alignItems="center" height="100%">
+            <img src={quality} />
+            <Text className="abt-div5-h1">Quality in writing your copys.</Text>
+          </Stack>
+        </div>
+        <div className="about-div6">
+          <Stack justifyContent="center" alignItems="center" height="100%">
+            <img src={challenge} />
+            <Text className="abt-div6-h1">
+              Reaching expectations through copys.
+            </Text>
+          </Stack>
+        </div>
+      </div>
+    </div>
   );
 };
 
