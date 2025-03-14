@@ -43,7 +43,11 @@ const DisplayCards = () => {
           onClick={() => handleCardClick(index)}
           overflow="hidden"
         >
-          <Image src={card.img} objectFit="cover" />
+          <Image
+            className="display-card-img"
+            src={card.img}
+            objectFit="cover"
+          />
           <Card.Body>
             <Text fontWeight="500" className="display-card-desc">
               {card.desc}

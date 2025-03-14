@@ -187,6 +187,10 @@ body {
   margin-top: 80px;
 }
 
+.display-card-img {
+  aspect-ratio: 1.8/1;
+}
+
 .card {
   background-color: #edca7f;
   color: rgb(53, 69, 194);
@@ -272,6 +276,7 @@ body {
   .cards {
     height: 740px;
     width: 740px;
+    margin-top: 180px;
   }
 
   .display-card-desc {
@@ -279,10 +284,10 @@ body {
   }
 }
 
-@media (min-width: 1589.88px) and (max-width: 2539.88px) {
+@media (min-width: 1500.88px) and (max-width: 2539.88px) {
   .cards {
-    height: 450px;
-    width: 450px;
+    height: 500px;
+    width: 500px;
   }
 }
 
