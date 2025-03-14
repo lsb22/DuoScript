@@ -934,6 +934,64 @@ body.active::before {
   border-radius: 10px;
 }
 
+@media (min-width: 2541.77px) {
+  .abt-img {
+    aspect-ratio: 4/1;
+  }
+
+  .abt-div2-desc-h1 {
+    font-size: 5rem;
+  }
+
+  .abt-div2-desc-h2 {
+    font-size: 3rem;
+  }
+
+  .abt-div2-desc-h3 {
+    font-size: 2.5rem;
+  }
+
+  .abt-div3-desc-h1 {
+    font-size: 3rem;
+  }
+
+  .abt-div3-desc-ul li {
+    font-size: 1.9rem;
+  }
+
+  .about-div4 img,
+  .about-div5 img,
+  .about-div6 img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .abt-div4-h1,
+  .abt-div5-h1,
+  .abt-div6-h1 {
+    color: rgb(33, 33, 33);
+    text-align: center;
+    font-size: 1.8rem;
+    width: 360px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1650px) and (max-width: 2540px) {
+  .abt-div2-desc-h2 {
+    font-size: 2rem;
+  }
+
+  .abt-div2-desc-h3 {
+    font-size: 1.8rem;
+  }
+
+  .abt-div3-desc-ul li {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 967.77px) and (min-width: 706px) {
   .about-container {
     padding: 100px;
