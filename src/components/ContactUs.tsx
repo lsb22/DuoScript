@@ -10,10 +10,15 @@ import {
   Text,
   Textarea,
   VStack,
+  Image,
+  Link,
 } from "@chakra-ui/react";
 
 import { Tooltip } from "../components/ui/tooltip";
 import { useEffect, useRef } from "react";
+import instagram from "../assets/images/instagram.svg";
+import twitter from "../assets/images/twitter2.svg";
+import youtube from "../assets/images/youtube.svg";
 
 interface Props {
   contactRef: (ref: React.RefObject<HTMLDivElement>) => void;
@@ -139,15 +144,23 @@ const ContactUs = ({ contactRef }: Props) => {
         </GridItem>
       </SimpleGrid>
       <HStack className="contact-social-butt" justifyContent="center">
-        <Button className="butt">
-          <Text>Twitter</Text>
-        </Button>
-        <Button className="butt">
-          <Text>Instagram</Text>
-        </Button>
-        <Button className="butt">
-          <Text>LinkedIn</Text>
-        </Button>
+        <a href="#" target="_blank" className="butt">
+          <img src={twitter} />
+        </a>
+        <a
+          href="https://www.instagram.com/duoscript_25/?utm_source=qr&igsh=MTJna3Q1eXUwaWNhaA%3D%3D#"
+          target="_blank"
+          className="butt"
+        >
+          <img src={instagram} />
+        </a>
+        <a
+          href="https://youtube.com/@duoscript?si=zDz5k-N6qKUC_Rhy"
+          target="_blank"
+          className="butt"
+        >
+          <img src={youtube} />
+        </a>
       </HStack>
     </Box>
   );
