@@ -10,8 +10,6 @@ import {
   Text,
   Textarea,
   VStack,
-  Image,
-  Link,
 } from "@chakra-ui/react";
 
 import { Tooltip } from "../components/ui/tooltip";
