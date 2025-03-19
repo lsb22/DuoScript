@@ -950,7 +950,7 @@ body.active::before {
 
 @media (min-width: 2541.77px) {
   .abt-img {
-    aspect-ratio: 4/1;
+    height: 600px;
   }
 
   .abt-div2-desc-h1 {
