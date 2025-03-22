@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import { Box, Stack, Text } from "@chakra-ui/react";
-import challenge from "../assets/images/challenge.png";
-import truck from "../assets/images/delivery-truck.png";
-import quality from "../assets/images/high-quality.png";
-import brothers from "../assets/images/brothers_img4.jpg";
+import challenge from "../assets/images/challenge_1.webp";
+import truck from "../assets/images/delivery-truck_1.webp";
+import quality from "../assets/images/high-quality_1.webp";
+import brothers from "../assets/images/brothers_img4_1.webp";
 
 interface Props {
   aboutRef: (ref: React.RefObject<HTMLDivElement>) => void;

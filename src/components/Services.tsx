@@ -1,9 +1,9 @@
 import { Box, Image, Button, Text } from "@chakra-ui/react";
-import email from "../assets/images/email_2.jpg";
-import script from "../assets/images/apprameya_proj_4.jpg";
-import ads from "../assets/images/apprameya_proj_5.jpg";
-import caption from "../assets/images/caption_writing_2.jpg";
-import description from "../assets/images/apprameya_proj_7.png";
+import email from "../assets/images/email_2_1.webp";
+import script from "../assets/images/apprameya_proj_4_1.webp";
+import ads from "../assets/images/apprameya_proj_5_1.webp";
+import caption from "../assets/images/caption_writing_2_1.webp";
+import description from "../assets/images/apprameya_proj_7_1.webp";
 import {
   DialogActionTrigger,
   DialogBody,

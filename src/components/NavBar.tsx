@@ -12,7 +12,7 @@ import {
   HStack,
   Image,
 } from "@chakra-ui/react";
-import logo from "../assets/images/duo_script_logo.png";
+import logo from "../assets/images/duo_script_logo4.webp";
 
 interface Props {
   scrollToServices: () => void;

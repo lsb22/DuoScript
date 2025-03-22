@@ -14,9 +14,9 @@ import {
 
 import { Tooltip } from "../components/ui/tooltip";
 import { useEffect, useRef } from "react";
-import instagram from "../assets/images/instagram.svg";
-import twitter from "../assets/images/twitter2.svg";
-import youtube from "../assets/images/youtube.svg";
+import instagram from "../assets/images/instagram_2.webp";
+import twitter from "../assets/images/twitter2_1.webp";
+import youtube from "../assets/images/youtube_1.webp";
 
 interface Props {
   contactRef: (ref: React.RefObject<HTMLDivElement>) => void;

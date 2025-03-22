@@ -1,8 +1,8 @@
 import { Card, Text, Image, Box } from "@chakra-ui/react";
-import email from "../assets/images/Formal_Email.png";
-import img2 from "../assets/images/apprameya_proj_2.jpg";
-import img3 from "../assets/images/apprameya_proj_3.webp";
-import img4 from "../assets/images/apprameya_proj_4.jpg";
+import email from "../assets/images/Formal_Email_1.webp";
+import img2 from "../assets/images/apprameya_proj_2_1.webp";
+import img3 from "../assets/images/apprameya_proj_3_1.webp";
+import img4 from "../assets/images/apprameya_proj_4_1.webp";
 import { useState } from "react";
 
 interface CardProps {
