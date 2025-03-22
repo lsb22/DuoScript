@@ -3,7 +3,7 @@ import { Box, Stack, Text } from "@chakra-ui/react";
 import challenge from "../assets/images/challenge.png";
 import truck from "../assets/images/delivery-truck.png";
 import quality from "../assets/images/high-quality.png";
-import brothers from "../assets/images/brothers_img2jpg.jpg";
+import brothers from "../assets/images/brothers_img4.jpg";
 
 interface Props {
   aboutRef: (ref: React.RefObject<HTMLDivElement>) => void;
