@@ -254,27 +254,15 @@ body {
   font-family: "Merriweather", sans-serif;
 }
 
-@media (max-height: 407.88px) {
+@media (max-width: 400px) {
+  .cards {
+    margin-top: -50px;
+  }
+}
+
+@media (max-height: 430px) {
   .cards {
     margin-top: 300px;
-  }
-}
-
-@media (max-height: 474.88px) and (min-height: 408px) {
-  .cards {
-    margin-top: 250px;
-  }
-}
-
-@media (max-height: 532px) and (min-height: 475px) {
-  .cards {
-    margin-top: 150px;
-  }
-}
-
-@media (min-height: 680px) {
-  .cards {
-    margin-top: -100px;
   }
 }
 
@@ -315,12 +303,6 @@ body {
   .cards {
     height: 320px;
     width: 320px;
-  }
-}
-
-@media (max-width: 640px) {
-  .cards {
-    margin-top: 0;
   }
 }
 
