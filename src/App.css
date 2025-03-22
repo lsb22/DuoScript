@@ -7,33 +7,32 @@
 
 @font-face {
   font-family: "Italianno";
-  src: url("../public/fonts/Italianno-Regular.ttf") format("truetype");
+  src: url("/fonts/Italianno-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("../public/fonts/Merriweather_24pt-BoldItalic.ttf")
-    format("truetype");
+  src: url("/fonts/Merriweather_24pt-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("../public/fonts/Merriweather_24pt-Regular.ttf") format("truetype");
+  src: url("/fonts/Merriweather_24pt-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../public/fonts/Raleway-Regular.ttf") format("truetype");
+  src: url("/fonts/Raleway-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../public/fonts/Raleway-Bold.ttf") format("truetype");
+  src: url("/fonts/Raleway-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }
