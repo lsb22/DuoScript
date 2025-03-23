@@ -41,6 +41,11 @@ const AboutSection = ({ aboutRef }: Props) => {
                 customers to take actions towards it.
               </Text>
             </Box>
+            <Box className="founderNames">
+              <Text className="f1">
+                Abhigna<span>and</span>Aprameya
+              </Text>
+            </Box>
           </Stack>
         </div>
         <div className="about-div3">
