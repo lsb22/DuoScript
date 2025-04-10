@@ -24,6 +24,7 @@ interface Props {
 
 const ContactUs = ({ contactRef }: Props) => {
   const contact_ref = useRef<HTMLDivElement>(null);
+  const form_ref = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     if (contact_ref.current) contactRef(contact_ref);
@@ -31,6 +32,7 @@ const ContactUs = ({ contactRef }: Props) => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (form_ref.current) form_ref.current.reset();
 
     const formData = new FormData(e.target as HTMLFormElement);
 
@@ -44,8 +46,9 @@ const ContactUs = ({ contactRef }: Props) => {
     const data = await response.json();
 
     if (data.success) {
-      (e.target as HTMLFormElement).reset();
+      alert("Message sent successfully!");
     } else {
+      alert("Failed to send message. Please try again.");
       console.log("Error", data);
     }
   };
@@ -89,7 +92,7 @@ const ContactUs = ({ contactRef }: Props) => {
         <GridItem className="contact-card-grid">
           <Card.Root className="contact-card">
             <Card.Body>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} ref={form_ref}>
                 <Field.Root mb={5}>
                   <Box pos="relative" w="full">
                     <Input
