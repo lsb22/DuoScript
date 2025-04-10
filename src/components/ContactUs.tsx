@@ -146,7 +146,7 @@ const ContactUs = ({ contactRef }: Props) => {
           <img src={twitter} />
         </a>
         <a
-          href="https://www.instagram.com/duoscript_25/?utm_source=qr&igsh=MTJna3Q1eXUwaWNhaA%3D%3D#"
+          href="https://www.instagram.com/aprameyakl?igsh=dmhobWlkZ2p0a3hp"
           target="_blank"
           className="butt"
         >
