@@ -32,7 +32,10 @@ const ContactUs = ({ contactRef }: Props) => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (form_ref.current) form_ref.current.reset();
+
+    setTimeout(() => {
+      if (form_ref.current) form_ref.current.reset();
+    }, 0);
 
     const formData = new FormData(e.target as HTMLFormElement);
 
